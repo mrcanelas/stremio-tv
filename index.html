@@ -1,0 +1,451 @@
+<html>
+  <body>
+
+    <div class="middle">
+      <div class="content">
+        <center>
+
+          <div class="holder">
+          
+            <div class="stremio_logo">
+            </div>
+
+            <div id="line-holder">
+            
+            <div class="stremio-outer-square extender1">
+            </div>
+            
+            <div class="stremio-outer-square extender2">
+            </div>
+
+            <div class="stremio-outer-square extender3">
+            </div>
+
+            <div class="stremio-outer-square extender4">
+            </div>
+
+            <div class="middle-line">
+            
+            </div>
+
+
+            </div>
+
+            <div class="stremio-outer-square">
+              <div class="stremio_play">
+              
+              </div>
+            </div>
+
+            <div class="logo-stage-2">
+            <div class="stremio-outer-square" style="border-right: 1px solid white; animation: extend21 5.5s infinite;">
+            </div>
+            
+            <div class="stremio-outer-square" style="border-top: 1px solid white; animation: extend22 6.5s infinite;">
+            </div>
+
+            <div class="stremio-outer-square" style="border-bottom: 1px solid white; animation: extend23 4.5s infinite;">
+            </div>
+
+            <div class="stremio-outer-square" style="border-left: 1px solid white; animation: extend24 7.5s infinite;">
+            </div>
+
+            <div class="middle-line2">
+            
+            </div>
+
+            </div>
+
+           </div>
+
+          <span id="footer">
+            <br/><br/><br/><br/><br/>
+            Copyright © 2021 - <a href="https://stremio.com" target="blank">Stremio</a>
+          </span>
+
+        </center>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<style>
+    .stremio_logo {
+    width: 150px;
+    height: 0;
+    padding-bottom: 150px;
+    overflow: hidden;
+    transform: translate(-50%,-50%) rotate(45deg);
+    position: absolute;
+    opacity: 0;
+    -webkit-animation: fadein 4.5s forwards 1, breath 4.7s infinite;
+}
+
+.logo-stage-2 {
+  opacity: 0;
+  position: absolute;
+  -webkit-animation: stage2fadein 4.5s forwards 1;
+}
+
+#line-holder {
+  position: absolute;
+    animation: fadeout 4.8s forwards 1;
+}
+
+.stremio_logo::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: linear-gradient(to right, #8a5aab 50%, #3a497d 50%);
+  background-size: 100% 100%;
+  background-position: right bottom;
+  transform: rotate(45deg);
+}
+
+.stremio-outer-square {
+    width: 150px;
+    height: 0;
+    padding-bottom: 150px;
+    overflow: hidden;
+    transform: translate(-50%,-50%) rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.holder {
+  position: relative;  
+    display: inline-block;
+    -webkit-animation: bigsmall 4.7s infinite;
+    animation-delay: 4.5s;
+}
+
+.extender1 {
+  width: 150px;
+}
+
+.extender1::before {
+  content: '';
+  display: block;
+  border-right: 1px solid white;
+  animation: extend1 2.5s forwards 1;
+}
+
+.extender2 {
+    top: -75px;
+    left: -75px;
+  width: 150px;
+  transform: rotate(-45deg);
+}
+
+.extender2::before {
+  content: '';
+  display: block;
+  border-right: 1px solid white;
+  animation: extend2 2.5s forwards 1;
+}
+
+.extender3 {
+    top: -75px;
+    left: -75px;
+  transform: rotate(135deg);
+}
+
+.extender3::before {
+  content: '';
+  display: block;
+  border-right: 1px solid white;
+  animation: extend3 2.5s forwards 1;
+}
+
+.extender4 {
+top: -75px;
+    left: -75px;
+  transform: rotate(-135deg);
+}
+
+.extender4::before {
+  content: '';
+  display: block;
+  border-right: 1px solid white;
+  animation: extend4 2.5s forwards 1;
+}
+
+.stremio_logo::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: linear-gradient(to right, #8a5aab 50%, #3a497d 50%);
+  background-size: 100% 100%;
+  background-position: right bottom;
+  transform: rotate(45deg);
+}
+
+.stremio_play {
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-left: 15px;
+    margin-top: 40px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    border-width: 0 40px calc(1.37254901961 * 40px) 40px;
+    transform: rotate(45deg);
+}
+
+#footer {
+  display: none;
+}
+
+.middle-line {
+    width: 212px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(-50%);
+    animation: extendline 3.1s linear 1;
+}
+
+.middle-line2 {
+    width: 212px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(-50%);
+    animation: extendline2 10s infinite;
+}
+
+
+@-webkit-keyframes extendline2 {
+    0% {
+       width: 0px;
+    }
+    20% {
+       width: 212px;
+    }
+    50% {
+       width: 0px;
+    }
+    75% {
+      width: 212px;
+    }
+    100% {
+       width: 0px;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+       opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+       opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+@-webkit-keyframes extendline {
+    0% {
+       width: 0px;
+    }
+    20% {
+       width: 0px;
+    }
+    50% {
+       width: 0px;
+    }
+    75% {
+      width: 0px;
+    }
+    100% {
+       width: 212px;
+    }
+}
+
+@-webkit-keyframes extend2 {
+    0% {
+       padding-bottom: 0px;
+    }
+    25% {
+       padding-bottom: 150px;
+    }
+    100% {
+       padding-bottom: 150px;
+    }
+}
+
+@-webkit-keyframes extend1 {
+    0% {
+       height: 0px;
+    }
+    18% {
+       height: 0px;
+    }
+    50% {
+       height: 150px;
+    }
+    100% {
+       height: 150px;
+    }
+}
+
+@-webkit-keyframes extend3 {
+    0% {
+       height: 0px;
+    }
+    43% {
+       height: 0px;
+    }
+    75% {
+       height: 150px;
+    }
+    100% {
+       height: 150px;
+    }
+}
+
+@-webkit-keyframes extend4 {
+    0% {
+       height: 0px;
+    }
+    68% {
+       height: 0px;
+    }
+    100% {
+       height: 150px;
+    }
+}
+
+@-webkit-keyframes breath {
+    0% {
+       box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    }
+    50% {
+       box-shadow: 0 0 70px rgba(0, 0, 0, 0.45);
+    }
+    100% {
+       box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@-webkit-keyframes stage2fadein {
+    0% {
+       opacity: 0;
+    }
+    90% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 0.45;
+    }
+}
+
+@-webkit-keyframes extend21 {
+    0% {
+       padding-bottom: 0px;
+    }
+    85% {
+       padding-bottom: 150px;
+    }
+    100% {
+       padding-bottom: 0px;
+    }
+}
+
+@-webkit-keyframes extend22 {
+    0% {
+       width: 150px;
+    }
+    27% {
+       width: 0px;
+    }
+    50% {
+       width: 150px;
+    }
+    100% {
+       width: 150px;
+    }
+}
+
+@-webkit-keyframes extend23 {
+    0% {
+       width: 0px;
+    }
+    75% {
+       width: 150px;
+    }
+    100% {
+       width: 0px;
+    }
+}
+
+@-webkit-keyframes extend24 {
+    0% {
+       padding-bottom: 150px;
+    }
+    75% {
+       padding-bottom: 0px;
+    }
+    100% {
+       padding-bottom: 150px;
+    }
+}
+
+@-webkit-keyframes bigsmall {
+    0% {
+       transform: scale(1);
+    }
+    50% {
+       transform: scale(1.1);
+    }
+    100% {
+       transform: scale(1);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body {
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2c43;
+}
+.middle {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.content {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+a {
+  color: #b174d7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+</style>

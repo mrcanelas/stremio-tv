@@ -1,16 +1,11 @@
 {
   "expo": {
-    "name": "stremio-tv",
+    "name": "StremioTV",
     "slug": "stremio-tv",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -24,7 +19,15 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "intentFilters": [
+        {
+          "action": "MAIN",
+          "category": [
+            "LEANBACK_LAUNCHER"
+          ]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
